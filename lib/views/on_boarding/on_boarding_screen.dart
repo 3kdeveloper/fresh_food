@@ -1,3 +1,5 @@
+import 'package:fresh_food/views/home/home_screen.dart';
+
 import '../../utils/exports.dart';
 
 class OnBoardingScreen extends StatelessWidget {
@@ -5,6 +7,31 @@ class OnBoardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: IntroductionScreen(
+        pages: OnBoardingData.onBoardingPages,
+        showSkipButton: true,
+        skip: const Text('SKIP'),
+        onSkip: () => Get.to(() => const HomeScreen()),
+        showNextButton: true,
+        next: const Text('NEXT'),
+        showDoneButton: true,
+        done: const Text('GET STARTED'),
+        onDone: () => Get.to(() => const HomeScreen()),
+        skipOrBackFlex: 0,
+        nextFlex: 0,
+        isProgressTap: false,
+        isTopSafeArea: true,
+        isBottomSafeArea: true,
+        globalBackgroundColor: AppTheme.kWhiteColor,
+        dotsDecorator: DotsDecorator(
+          activeColor: AppTheme.kPrimaryColor,
+          activeSize: const Size(23, 10),
+          activeShape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(23),
+          ),
+        ),
+      ),
+    );
   }
 }
