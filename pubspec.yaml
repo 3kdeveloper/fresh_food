@@ -14,6 +14,7 @@ dependencies:
 
   cupertino_icons: ^1.0.5
   get:
+  auto_size_text:
   introduction_screen:
   hive:
   hive_flutter:
@@ -48,4 +49,5 @@ flutter:
 
   assets:
     - assets/
+    - assets/icons/
     - assets/images/

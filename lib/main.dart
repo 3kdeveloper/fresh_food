@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Fresh Food',
       debugShowCheckedModeBanner: false,
+      defaultTransition: Transition.noTransition,
       theme: AppTheme.themeData,
       home: const OnBoardingScreen(),
     );
