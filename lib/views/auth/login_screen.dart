@@ -85,9 +85,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         btnText: 'Login',
                         onTap: () {
                           // if (_loginFormKey.currentState!.validate()) {
-                          //   Get.to(() => const HomeScreen());
+                          //   Get.to(() => const MainScreen());
                           // }
-                          Get.to(() => const HomeScreen());
+                          Get.to(() => const MainScreen());
                         },
                       ),
                       SizedBox(height: Get.height * 0.03),

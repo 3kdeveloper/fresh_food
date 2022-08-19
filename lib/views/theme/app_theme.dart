@@ -13,6 +13,10 @@ class AppTheme {
     // ignore: deprecated_member_use
     accentColor: kAccentColor,
     scaffoldBackgroundColor: kWhiteColor,
+
+    appBarTheme: const AppBarTheme(
+      backgroundColor: kPrimaryColor,
+    ),
     // fontFamily: '',
     textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
