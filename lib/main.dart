@@ -32,12 +32,15 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: 'Fresh Food',
-      debugShowCheckedModeBanner: false,
-      defaultTransition: Transition.noTransition,
-      theme: AppTheme.themeData,
-      home: const OnBoardingScreen(),
+    return ChangeNotifierProvider(
+      create: (BuildContext context) => BottomNavBarProvider(),
+      child: GetMaterialApp(
+        title: 'Fresh Food',
+        debugShowCheckedModeBanner: false,
+        defaultTransition: Transition.noTransition,
+        theme: AppTheme.themeData,
+        home: const MainScreen(),
+      ),
     );
   }
 }
